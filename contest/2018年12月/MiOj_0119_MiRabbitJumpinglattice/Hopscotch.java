@@ -1,4 +1,4 @@
-package December2018;
+package MiOj_0119_MiRabbitJumpinglattice;
 
 /*
 	119.小米兔跳格子
