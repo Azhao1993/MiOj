@@ -1,3 +1,4 @@
+package January2019;
 
 /*
 	127:殊途同归
@@ -46,38 +47,10 @@
 */
 public class DifferentRoads {
 	private static String solution(String line) {
-		// please write your code here
-		String[] str = line.split(" ");
-		// 城市的个数
-		int city = Integer.parseInt(str[0]);
-		// 铁路的条数
-		int railway = Integer.parseInt(str[1]);
-		//
-		int[][] rail = new int[city][city];
-		for (int i = 2; i < railway * 2 + 2; i++) {
-			rail[Integer.valueOf(str[i++]) - 1][Integer.valueOf(str[i]) - 1] = 1;
-		}
-		//公路先到,返回铁路的最短路径
-		int result = 0;
-		if(rail[0][city-1]!=1) {
-			result =  Dijkstra(rail,1,1,city,0);
-		}else {
-			//铁路先到，返回公路的最短路径
-			result = Dijkstra(rail,0,1,city,0);
-		}
-		return String.valueOf(result);
 
-		// return ans;
 	}
 
-	private static int Dijkstra(int[][] rail, int flag, int begin,int city,int result) {
-		if(begin==city) {
-			return result;
-		}
-		for(int i = begin;i<city;i++) {			
-			if(rail[0][i]==flag) {
-				result
-			}
-		}
+	private static int Dijkstra(int[][] rail, int flag, int begin, int city, int result) {
+
 	}
 }
