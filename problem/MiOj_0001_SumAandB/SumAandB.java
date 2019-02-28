@@ -1,4 +1,4 @@
-package MiOj_0001_sumab;
+package MiOj_0001_SumAandB;
 import java.util.Scanner;
 /*
 	描述
@@ -22,7 +22,7 @@ import java.util.Scanner;
 	
 	例程可能留有小坑，请仔细阅读题目，注意数据范围。
  */
-public class sumab {
+public class SumAandB {
 	 public static void main(String args[]) {
 	        Scanner scan = new Scanner(System.in);
 	        //String line;
