@@ -23,11 +23,13 @@ package MiOj_137_xiaoaipassword;
 			000000064
 			000000003
  */
+
+//Global hard timeout exceeded. For more information, please contact the developer.
 import java.util.Scanner;
 
 public class xiaoaipassword {
-	public static void main(String args[]) {		
-		
+	public static void main(String args[]) {
+
 		Scanner scan = new Scanner(System.in);
 		while (scan.hasNext()) {
 			long A = scan.nextLong();
@@ -38,8 +40,8 @@ public class xiaoaipassword {
 			long n = scan.nextLong();
 
 			int[] arr = get(n);
-			long res = (long) (Math.pow(A, arr[0])% mod) * (long) (Math.pow(B, arr[1])% mod) * (long) (Math.pow(C, arr[2] * D)% mod)
-					% mod;
+			long res = (long) (Math.pow(A, arr[0]) % mod) * (long) (Math.pow(B, arr[1]) % mod)
+					* (long) (Math.pow(C, arr[2] * D) % mod) % mod;
 			System.out.println(String.format("%09d", res));
 		}
 	}
