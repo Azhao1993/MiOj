@@ -1,4 +1,4 @@
-package MiOj_138_CarrayonCounting;
+
 /*
 	138.Carryon ÊıÊı×Ö
 		ÃèÊö
